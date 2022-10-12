@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&family=Roboto:ital,wght@1,400;1,500;1,700&display=swap");
+:root {
+  box-sizing: border-box;
+  --blue-color: #5c84ec;
+  --pink-color: #f03c6d;
+  --paragraph-color: #707070;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--blue-color), var(--pink-color));
+  border-radius: 20px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Mulish", sans-serif;
+  background: #f9fbff;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--paragraph-color);
+}
+a {
+  font-size: 1rem;
+  color: #fff;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+
+/* Navigation section */
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+nav .active {
+  border-bottom: 1.5px solid white;
+}
+nav.stickyadd .active {
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand,
+.container .navbar-nav a.nav-link {
+  color: #fff;
+}
+
+nav.stickyadd {
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.5s;
+}
+
+nav.stickyadd .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav.stickyadd .navbar-brand {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+nav.stick {
+  transition: all 0.5s;
+}
+.hamburger {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.hamburger.whenscrolled {
+  color: #000;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(92, 132, 2360, 0.8),
+      rgba(92, 132, 2360, 0.8)
+    ),
+    url(../assets/school.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero-content {
+  color: #fff;
+}
+
+/* about section */
+
+.about-content {
+  background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+.wrap {
+  margin-top: 40px;
+  padding: 30px;
+}
+.wrap p,
+.wrap h2 {
+  color: #fff;
+}
+.wrap h2 {
+  margin-bottom: 20px;
+}
+
+/* service section */
+
+.service-show {
+  text-align: center;
+}
+.service-class .card {
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.service-class i {
+  font-size: 50px;
+  background: linear-gradient(var(--pink-color), black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* team section */
+.team-class {
+  z-index: 3;
+  padding: 100px;
+}
+.team-class img {
+  z-index: 2;
+}
+
+.team-class .bg-white {
+  background: #fff;
+}
+.team-content {
+  padding: 15px;
+}
+.team-class .box {
+  position: relative;
+  z-index: 1;
+}
+
+.team-class .box::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+  background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+}
+
+/* project section */
+.project-class i {
+  font-size: 50px;
+  background: linear-gradient(var(--pink-color), black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0 5px 20px;
+}
+.project-class .col-lg-3 {
+  padding: 0;
+}
+.project-class .card {
+  margin-right: 10px;
+}
+
+/* contact section */
+.contact-class .bg-contact {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(74, 118, 237, 0.8), rgba(74, 118, 237, 0.8)),
+    url("../assets/School.jpg");
+  background-position: 200 200;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-content {
+  margin-top: -20vh;
+}
+.contact-class form {
+  background-color: #fff;
+  padding: 100px;
+}
+.contact-class .contact-addr {
+  background: linear-gradient(135deg, var(--blue-color), var(--pink-color));
+  padding: 90px;
+  color: #fff;
+}
+.contact-class .contact-addr p {
+  color: #fff;
+  margin: 20px 0;
+}
+.contact-class .social-icon {
+  display: table;
+}
+.contact-class .social-icon i {
+  display: table-cell;
+  font-size: 20px;
+  width: 1%;
+}
+.form-group {
+  margin: 20px;
+}
+/* footer section */
+footer {
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #0c003e;
+}
+footer p {
+  color: #fff;
+}
