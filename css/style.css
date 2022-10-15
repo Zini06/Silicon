@@ -208,6 +208,11 @@ nav.stick {
   padding: 90px;
   color: #fff;
 }
+.error {
+  color: red;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
 .contact-class .contact-addr p {
   color: #fff;
   margin: 20px 0;
